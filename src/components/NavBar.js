@@ -22,12 +22,12 @@ const NavBar = (props) => {
   return (
     <div>
       <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">reactstrap</NavbarBrand>
+        <NavbarBrand href="/">Home</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">Components</NavLink>
+              <NavLink href="/characters">Characters</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
@@ -38,19 +38,19 @@ const NavBar = (props) => {
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
-                  Option 1
+                <NavLink href="https://rickandmortyapi.com/documentation/" target="_blank">API Docs</NavLink>
                 </DropdownItem>
                 <DropdownItem>
-                  Option 2
+                <NavLink href="https://reactstrap.github.io" target="_blank">Reactstrap</NavLink>
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem>
-                  Reset
+                <NavLink href="https://lambdaschool.com" target="_blank">Lambda School</NavLink>
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
+          <NavbarText>"Weddings are basically funerals with cake."</NavbarText>
         </Collapse>
       </Navbar>
     </div>
