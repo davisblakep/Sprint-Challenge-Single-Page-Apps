@@ -34,7 +34,7 @@ const NavBar = (props) => {
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
-                Options
+                Resources
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
