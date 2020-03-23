@@ -16,7 +16,6 @@ const CharacterCard = (props) => {
           <CardText>Episodes: {props.episode.length}</CardText>
           <CardText>Species: {props.species}</CardText>
           <CardText>Origin: {props.origin.name}</CardText>
-
           <Button href={`/character/${props.id}`}>View</Button>
         </CardBody>
       </Card>

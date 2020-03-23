@@ -4,6 +4,7 @@ import { Route } from "react-router-dom";
 
 import WelcomePage from "./components/WelcomePage";
 import CharacterList from "./components/CharacterList";
+import IndividualCard from "./components/IndividualCard";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <Header />
       <Route exact path="/" component={WelcomePage} />
       <Route path="/characters" component={CharacterList} />
+      <Route path="/character/:id" component={IndividualCard} />
     </main>
   );
 }
