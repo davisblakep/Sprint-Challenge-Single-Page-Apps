@@ -30,7 +30,7 @@ const NavBar = (props) => {
               <NavLink href="/characters">Characters</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+            <NavLink href="/character-search">Search</NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>

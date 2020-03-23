@@ -17,12 +17,10 @@ export default function IndividualCard (props) {
       setCharList(response.data)})
     .catch(err=> {console.log(err)});
   }, []);
-
-
+  
 console.log('this is props', props)
 console.log('this is charList name', charList.name)
 
- 
   return (
     <div className="individual-card">
     <Card style={{ width: '20rem' }}>
