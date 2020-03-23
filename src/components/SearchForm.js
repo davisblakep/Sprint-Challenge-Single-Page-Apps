@@ -3,8 +3,6 @@ import { Button } from 'reactstrap';
 
 import axios from 'axios';
 
-
-
 export default function SearchForm(props) {
   const [charList, setCharList] = useState([]);
 
@@ -12,12 +10,10 @@ export default function SearchForm(props) {
     axios.get("https://cors-anywhere.herokuapp.com/https://rickandmortyapi.com/api/character/")
     .then(response => {console.log(response.data.results.map(x => 
       x))
-    
       setCharList(response.data.results.map(x => 
         x
       ))})
     .catch(err=> {console.log(err)});
-  
   }, []);
 
 const nameHolder = charList.map(x => 
@@ -37,8 +33,7 @@ const nameHolder = charList.map(x =>
   }, [searchTerm]);
   return (
     <section className="search-form">
-   
-   <div className="search-results">
+      <div className="search-results">
       <input
         type="text"
         placeholder="Search"
@@ -51,7 +46,6 @@ const nameHolder = charList.map(x =>
         ))}
       </div>
     </div>
-  
     </section>
   );
 }
